@@ -1,4 +1,4 @@
-package patterns.decorator;
+package patterns.decorator.coffewithaditiondecorator;
 
 public abstract class Beverage {
     public enum Size { TALL, GRANDE, VENTI };

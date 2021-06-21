@@ -1,4 +1,4 @@
-package patterns.decorator;
+package patterns.decorator.coffewithaditiondecorator;
 
 public class TestDrive {
 

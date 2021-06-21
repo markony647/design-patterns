@@ -1,17 +1,16 @@
-package patterns.decorator;
+package patterns.decorator.coffewithaditiondecorator;
 
-public class Soy extends CondimentDecorator {
-
-    public Soy(Beverage beverage) {
+public class Whip extends CondimentDecorator {
+    public Whip(Beverage beverage) {
         this.beverage = beverage;
     }
 
     public String getDescription() {
-        return beverage.getDescription() + " Size: " + beverage.getSize() + ", Soy";
+        return beverage.getDescription()  + " Size: " + beverage.getSize() + ", Whip";
     }
 
     public double cost() {
-        return .15 + getAdditionalFeeForSize(beverage.getSize()) + beverage.cost();
+        return .10 + getAdditionalFeeForSize(beverage.getSize()) + beverage.cost();
     }
 
     @Override

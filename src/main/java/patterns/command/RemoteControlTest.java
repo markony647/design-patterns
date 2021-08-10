@@ -10,5 +10,8 @@ public class RemoteControlTest {
 
         remoteControl.setCommand(lightOnCommand);
         remoteControl.buttonPressed();
+
+        remoteControl.setCommand(new MusicOnCommand());
+        remoteControl.buttonPressed();
     }
 }
